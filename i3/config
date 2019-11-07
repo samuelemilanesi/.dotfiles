@@ -96,6 +96,8 @@ bindsym $mod+a focus parent
 set $ws1 "1: Terminal &#xf120;"
 set $ws2 "2: Code &#xf121;"
 set $ws3 "3: Firefox &#xf269;"
+set $ws4 "4: PDF &#xf1c1;"
+set $ws5 "5: Finder &#xf07b;"
 set $ws6 "Loading"
 set $ws9 "9: Spotify &#xf83c;"
 set $ws10 "10: Whatsapp &#xf1bc;"
@@ -105,8 +107,8 @@ set $ws10 "10: Whatsapp &#xf1bc;"
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -117,8 +119,8 @@ bindsym $mod+0 workspace $ws10
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -206,3 +208,5 @@ assign [class="jetbrains-clion"] $ws2
 assign [class="Sublime_text"] $ws2
 assign [class="Code"] $ws2
 assign [class="java-lang-Thread"] $ws6
+assign [class="Nautilus"] $ws5
+assign [class="Evince"] $ws4
