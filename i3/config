@@ -210,3 +210,5 @@ assign [class="Code"] $ws2
 assign [class="java-lang-Thread"] $ws6
 assign [class="Nautilus"] $ws5
 assign [class="Evince"] $ws4
+
+for_window [urgent=latest] focus
