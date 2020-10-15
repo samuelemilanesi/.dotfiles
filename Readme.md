@@ -1,2 +1,6 @@
-# UbuntuConfig
-My config files for Ubuntu on XPS13 9370
+# dotfiles
+my dotfiles for 
+  - vim
+  - bashrc
+  - i3
+  - zsh
