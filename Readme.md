@@ -4,3 +4,4 @@ my dotfiles for
   - bashrc
   - i3
   - zsh
+  - Xresources
