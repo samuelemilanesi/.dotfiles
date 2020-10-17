@@ -1,11 +1,9 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline',
 Plug 'dracula/vim',{'as':'dracula'}
-Plug 'tranvansang/octave.vim'
+Plug 'tranvansang/octave.vim',
+Plug 'codota/tabnine-vim'
 call plug#end()
-
-
-set rtp+=~/.vim/plugin/tabnine-vim
 
 "General
 set so=10
@@ -28,10 +26,7 @@ set incsearch	" Searches for strings incrementally
 syntax enable
 
 colorscheme dracula
-
-
-
-
+set termguicolors
 " Text, tab and indent related
 set smarttab
 set lbr
@@ -49,16 +44,20 @@ set softtabstop=4	" Number of spaces per Tab
 set showmatch	" Highlight matching brace
 set virtualedit=all	" Enable free-range cursor
 set visualbell	" Use visual bell (no beeping)
- 
-
 
 " Advanced       
-
 set undolevels=1000	" Number of undo levels
 
-
+" Copy/paste from/in the X11 register
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+p
 
 " slime to vim:terminal
 let g:slime_target="vimterminal"
+
+"Pane movements Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
