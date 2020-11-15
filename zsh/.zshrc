@@ -169,3 +169,4 @@ bindkey '^e' edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 eval $(thefuck --alias)
+alias cdt='cd /home/sam/Desktop/Tesi\ Gatti/codes/src'
