@@ -19,7 +19,7 @@
 *.color15:    #E6E6E6
 
 
- Xft.dpi: 192
+!Xft.dpi: 192
 
 ! These might also be useful depending on your monitor and personal preference:
 Xft.autohint: 0
@@ -33,25 +33,25 @@ Xft.rgba: rgb
 !! UXTERM SETTINGS
 
 !niente barra di scorrimento
-UXTerm*scrollBar: false
+!UXTerm*scrollBar: false
 
-! http://invisible-island.net/xterm/xterm.faq.html#tiny_menus
-!dimensione predefinita
-UXTerm.VT100.geometry: 89x29
+!! http://invisible-island.net/xterm/xterm.faq.html#tiny_menus
+!!dimensione predefinita
+!UXTerm.VT100.geometry: 89x29
 
-!256 colori
-UXTerm*termName: xterm-256color
+!!256 colori
+!UXTerm*termName: xterm-256color
 
-!font TrueType con antialiasing
-UXTerm*faceName: FiraMono Nerd Font Mono
+!!font TrueType con antialiasing
+!UXTerm*faceName: FiraMono Nerd Font Mono
 
-! dimensione del font precedente
-UXterm*faceSize: 12
-UXterm*renderFont: true
+!! dimensione del font precedente
+!UXterm*faceSize: 12
+!UXterm*renderFont: true
 
 !copy and paste
- xterm*VT100.Translations: #override \
-      Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
-      Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-      Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
-      Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
+! xterm*VT100.Translations: #override \
+!      Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
+!      Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+!      Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+!      Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)

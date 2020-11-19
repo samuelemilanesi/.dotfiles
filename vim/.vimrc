@@ -2,7 +2,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline',
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'tranvansang/octave.vim',
-Plug 'codota/tabnine-vim'
+Plug 'codota/tabnine-vim',
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 "General
