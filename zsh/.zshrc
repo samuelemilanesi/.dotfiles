@@ -65,7 +65,11 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    thefuck 
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
@@ -105,10 +109,10 @@ alias repos="cd ~/Documents/git-repos/"
 alias mlab="matlab -nodesktop -nosplash"
 # PS1 (nome colorato)
 autoload -U colors && colors
-#all_emoji=(👹 🚀 🧙 👾 🤖 🤠 🐢 🐨 🦊)
+all_emoji=(👹 🚀 🧙 👾 🤖 🤠 🐢 🐨 🦊)
 
-#emoji=${all_emoji[$RANDOM % ${#all_emoji[@]} ]}
-emoji=""
+emoji=${all_emoji[$RANDOM % ${#all_emoji[@]} ]}
+#emoji=""
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M%{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} $emoji "
 # History in cache directory:
 HISTSIZE=1000
@@ -164,9 +168,6 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-# Load zsh-syntax-highlighting; should be last.
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 eval $(thefuck --alias)
 alias cdt='cd /home/sam/Desktop/Tesi\ Gatti/codes/src'

@@ -1,0 +1,12 @@
+- vim:
+    - Gvim #copy-paste 
+- zsh:
+    - oh-my-zsh
+- ranger:
+    - ueberzug #image preview
+- alacritty #terminal emulator
+- zathura #pdf reader
+
+
+# laptop only
+- fusama #trackpad gestures
