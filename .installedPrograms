@@ -1,7 +1,10 @@
 - vim:
     - Gvim #copy-paste 
 - zsh:
-    - oh-my-zsh
+    - oh-my-zsh:
+	- some preinstalled plugins (see .zshrc)
+	- zsh-autosuggestions
+	- zsh-syntax-highlighting
 - ranger:
     - ueberzug #image preview
 - alacritty #terminal emulator
