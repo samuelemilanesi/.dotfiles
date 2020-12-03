@@ -9,7 +9,7 @@
 - stow
 - zathura 
 - python3-pip
-- ranger, libxext-dev, ueberzug
+- ranger, libxext-dev, ueberzug, alexanderjeurissen/ranger_devicons
 - gnome-tweak-tool, gnome-theme-extension https://extensions.gnome.org/extension/19/user-themes/
 - dropbox
 - deja dup
