@@ -1,0 +1,12 @@
+# Temporary alias
+
+alias cat_cf=/home/sam/Dropbox/repos/scripts/cat_cf_videos.sh 
+
+
+
+# Permanent alias
+
+alias open=xdg-open
+alias repos="cd ~/Documents/git-repos/"
+alias mlab="matlab -nodesktop -nosplash"
+
