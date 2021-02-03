@@ -18,7 +18,8 @@
 - vim, :PlugInstall
 - gnome settings: 
 	- general all: all selected
-	- apparence: dracula in all possible fields
+	<!--- apparence: dracula in all possible fields--> new theme used:
+	gruvbox
 	- extension: all selected
 	- font: ubuntu regular 11, roboto slab regular 11, fira mono reg 11, ubuntu bold 11
 		scaling factor 1.25
@@ -32,3 +33,4 @@
 - super+enter : terminal
 - super+f: nautilus --new-window /home/sam/dropbox
 - super+spacebar: adjustment mode
+- search for dbus mp3 controls 
